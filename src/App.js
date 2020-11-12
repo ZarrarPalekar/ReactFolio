@@ -1,18 +1,62 @@
 import React from "react";
-
-//Components
-import MyNavbar from "./components/my-navbar/mynavbar.component";
-import MyCarousel from "./components/my-carousel/my-carousel.component";
-import TitleMessage from "./components/title-message/title-message.component";
+import { Container } from "react-bootstrap";
+import { Parallax } from "react-parallax";
+import LightSpeed from "react-reveal/LightSpeed";
 
 import "./App.css";
+import MyCarousel from "./components/my-carousel/my-carousel.component";
+//Components
+import MyNavbar from "./components/my-navbar/mynavbar.component";
+import TitleMessage from "./components/title-message/title-message.component";
+import About from "./pages/about/about.component";
+import BgImage from "./assets/img/parallex/background.webp";
+import useWindowDimensions from "./functionality/checkViewPort";
+import BgImageSmall from "./assets/img/parallex/background_reverse.webp";
 
 const App = () => {
+  const { height, width } = useWindowDimensions();
+
   return (
     <div className="App">
       <MyNavbar />
       <MyCarousel />
       <TitleMessage />
+      <div>
+        {/* <a href='https://www.freepik.com/vectors/background'>Background vector created by vectorpouch - www.freepik.com</a> */}
+        {width > 600 ? (
+          <Parallax
+            className="my-parallax"
+            blur={{ min: -30, max: 30 }}
+            bgImage={BgImage}
+            bgImageAlt=""
+            strength={-200}
+          >
+            <div>
+              <Container className="container-box rounded">
+                <LightSpeed left>
+                  <About />
+                </LightSpeed>
+              </Container>
+            </div>
+          </Parallax>
+        ) : (
+          <Parallax
+            className="my-parallax"
+            blur={{ min: -30, max: 30 }}
+            bgImage={BgImageSmall}
+            bgImageAlt=""
+            strength={-200}
+          >
+            <div>
+              <Container className="container-box rounded">
+                <LightSpeed left>
+                  <About />
+                </LightSpeed>
+              </Container>
+            </div>
+          </Parallax>
+        )}
+      </div>
     </div>
   );
 };
