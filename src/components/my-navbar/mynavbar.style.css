@@ -13,6 +13,10 @@
   animation: moveDown 1s ease-in-out;
 }
 
+.navToggler {
+  padding: 0%;
+  border: none;
+}
 @keyframes moveDown {
   from {
     transform: translateY(-5rem);

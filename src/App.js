@@ -12,6 +12,7 @@ import About from "./pages/about/about.component";
 import BgImage from "./assets/img/parallex/background.webp";
 import useWindowDimensions from "./functionality/checkViewPort";
 import BgImageSmall from "./assets/img/parallex/background_reverse.webp";
+import Skills from "./pages/skills/skills.component";
 
 const App = () => {
   const { height, width } = useWindowDimensions();
@@ -26,7 +27,7 @@ const App = () => {
         {width > 600 ? (
           <Parallax
             className="my-parallax"
-            blur={{ min: -30, max: 30 }}
+            blur={{ min: -20, max: 20 }}
             bgImage={BgImage}
             bgImageAlt=""
             strength={-200}
@@ -43,7 +44,7 @@ const App = () => {
           <Parallax
             className="my-parallax"
             blur={{ min: -30, max: 30 }}
-            bgImage={BgImageSmall}
+            bgImage={BgImage}
             bgImageAlt=""
             strength={-200}
           >
@@ -57,6 +58,12 @@ const App = () => {
           </Parallax>
         )}
       </div>
+      <Container className="container-box rounded">
+        <LightSpeed right>
+          <hr />
+          <Skills />
+        </LightSpeed>
+      </Container>
     </div>
   );
 };
