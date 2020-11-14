@@ -2,6 +2,7 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import { Parallax } from "react-parallax";
 import Fade from "react-reveal/Fade";
+import Slide from "react-reveal/Slide";
 
 import "./App.css";
 import MyCarousel from "./components/my-carousel/my-carousel.component";
@@ -14,6 +15,7 @@ import useWindowDimensions from "./functionality/checkViewPort";
 import BgImageSmall from "./assets/img/parallex/background_reverse.webp";
 import Skills from "./pages/skills/skills.component";
 import Experience from "./pages/experience/experience.component";
+import TimeLine from "./components/projects-timeline/projects-timeline.component";
 
 const App = () => {
   const { height, width } = useWindowDimensions();
@@ -73,6 +75,12 @@ const App = () => {
           </Fade>
         </Container>
       </div>
+      <Container className="container-box rounded">
+        <Slide bottom duration={500}>
+          <hr />
+          <TimeLine />
+        </Slide>
+      </Container>
     </div>
   );
 };

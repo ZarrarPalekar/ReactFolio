@@ -23,7 +23,10 @@ const ScrollDown = () => {
   return (
     <MyScroll>
       <div className="turn">
-        <span> &gt; </span>
+        <span style={{ color: "white" }}>
+          {" "}
+          <a href="#about">&gt;</a>{" "}
+        </span>
       </div>
     </MyScroll>
   );

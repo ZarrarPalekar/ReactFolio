@@ -20,12 +20,18 @@ const Experience = () => {
                 as="h5"
                 className="d-flex justify-content-center flex-wrap"
               >
-                <Card.Img
-                  variant="top"
-                  className="img-resize"
-                  src={L_TI}
-                  alt="TI logo"
-                />
+                <a
+                  href="https://www.tendersinfo.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Card.Img
+                    variant="top"
+                    className="img-resize"
+                    src={L_TI}
+                    alt="TI logo"
+                  />
+                </a>
               </Card.Header>
               <Card.Body className="d-flex justify-content-center flex-column">
                 <div>
@@ -74,12 +80,18 @@ const Experience = () => {
                 as="h5"
                 className="d-flex justify-content-center flex-wrap"
               >
-                <Card.Img
-                  variant="top"
-                  className="img-resize"
-                  src={L_NG}
-                  alt="NG logo"
-                />
+                <a
+                  href="https://newgensoft.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Card.Img
+                    variant="top"
+                    className="img-resize"
+                    src={L_NG}
+                    alt="NG logo"
+                  />
+                </a>
               </Card.Header>
               <Card.Body className="d-flex justify-content-center flex-column">
                 <div>
@@ -123,12 +135,18 @@ const Experience = () => {
                 as="h5"
                 className="d-flex justify-content-center flex-wrap"
               >
-                <Card.Img
-                  variant="top"
-                  className="img-resize"
-                  src={L_TM}
-                  alt="TM logo"
-                />
+                <a
+                  href="https://www.techmahindra.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Card.Img
+                    variant="top"
+                    className="img-resize"
+                    src={L_TM}
+                    alt="TM logo"
+                  />
+                </a>
               </Card.Header>
               <Card.Body className="d-flex justify-content-center flex-column">
                 <div>
