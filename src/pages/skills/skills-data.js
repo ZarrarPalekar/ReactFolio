@@ -17,6 +17,9 @@ import L_HEROKU from "../../assets/img/skills/heroku.svg";
 import L_GITHUB_PAGES from "../../assets/img/skills/github.svg";
 import L_JAVASCRIPT from "../../assets/img/skills/javascript.svg";
 import L_TYPESCRIPT from "../../assets/img/skills/typescript.svg";
+import L_NET from "../../assets/img/skills/net.svg";
+import L_ORACLE from "../../assets/img/skills/oracle.svg";
+import L_SVN from "../../assets/img/skills/tortoisesvn.svg";
 
 export const skills = {
   frontend: [
@@ -32,6 +35,12 @@ export const skills = {
       imgAltText: "CSS 3",
       imgSrc: L_CSS3,
       skillName: "CSS3",
+    },
+    {
+      link: "https://dotnet.microsoft.com/",
+      imgAltText: ".Net",
+      imgSrc: L_NET,
+      skillName: ".Net",
     },
     {
       link: "https://www.javascript.com/",
@@ -144,6 +153,12 @@ export const skills = {
       imgSrc: L_MONGODB,
       skillName: "MongoDB",
     },
+    {
+      link: "https://www.oracle.com/in/database/technologies/appdev/plsql.html",
+      imgAltText: "PL/SQL",
+      imgSrc: L_ORACLE,
+      skillName: "PL/SQL",
+    },
   ],
   versionControl: [
     {
@@ -151,6 +166,12 @@ export const skills = {
       imgAltText: "GIT",
       imgSrc: L_GIT,
       skillName: "GIT",
+    },
+    {
+      link: "https://tortoisesvn.net/",
+      imgAltText: "TortoiseSVN",
+      imgSrc: L_SVN,
+      skillName: "TortoiseSVN",
     },
   ],
 };

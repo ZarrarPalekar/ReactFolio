@@ -175,22 +175,24 @@ const Skills = () => {
                 </Card.Title>
                 <hr />
                 <Card.Text className="card-text d-flex justify-content-start flex-column">
-                  <span className="p-2">
-                    <a
-                      className="text-dark text-decoration-none"
-                      href={skills.versionControl[0].link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <Image
-                        src={skills.versionControl[0].imgSrc}
-                        alt={skills.versionControl[0].imgAltText}
-                        rounded
-                        className="image-style m-1"
-                      ></Image>{" "}
-                      {skills.versionControl[0].skillName}
-                    </a>
-                  </span>
+                  {skills.versionControl.map((skill, index) => (
+                    <span className="p-2" key={index}>
+                      <a
+                        className="text-dark text-decoration-none"
+                        href={skill.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Image
+                          src={skill.imgSrc}
+                          alt={skill.imgAltText}
+                          rounded
+                          className="image-style m-1"
+                        ></Image>{" "}
+                        {skill.skillName}
+                      </a>
+                    </span>
+                  ))}
                 </Card.Text>
               </Card.Body>
             </Card>
