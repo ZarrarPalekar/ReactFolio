@@ -783,7 +783,7 @@ const TimeLine = () => {
 
           <ImageEvent
             date="Aug-2020"
-            className="focus text-center"
+            className="text-center"
             text="Old CV"
             src={L_OLDCV}
             alt="Old CV"

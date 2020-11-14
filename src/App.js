@@ -16,6 +16,10 @@ import BgImageSmall from "./assets/img/parallex/background_reverse.webp";
 import Skills from "./pages/skills/skills.component";
 import Experience from "./pages/experience/experience.component";
 import TimeLine from "./components/projects-timeline/projects-timeline.component";
+import ContactForm from "./pages/contact-form/contact-form.component";
+import FooterPanel from "./components/footer/footer.component";
+import Particles from "react-particles-js";
+import { particlesOptions } from "./particlesOptions";
 
 const App = () => {
   const { height, width } = useWindowDimensions();
@@ -23,6 +27,10 @@ const App = () => {
   return (
     <div className="App">
       <MyNavbar />
+      <Particles
+        className="particles particles-box"
+        params={particlesOptions}
+      />
       <MyCarousel />
       <TitleMessage />
       <div>
@@ -81,6 +89,14 @@ const App = () => {
           <TimeLine />
         </Slide>
       </Container>
+      <Container className="container-box rounded">
+        <Fade duration={500}>
+          <hr />
+          <ContactForm />
+        </Fade>
+      </Container>
+      <hr />
+      <FooterPanel />
     </div>
   );
 };
