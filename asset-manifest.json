@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/ReactFolio/static/css/main.63f1720b.chunk.css",
-    "main.js": "/ReactFolio/static/js/main.88b6e60a.chunk.js",
-    "main.js.map": "/ReactFolio/static/js/main.88b6e60a.chunk.js.map",
+    "main.js": "/ReactFolio/static/js/main.efc7851d.chunk.js",
+    "main.js.map": "/ReactFolio/static/js/main.efc7851d.chunk.js.map",
     "runtime-main.js": "/ReactFolio/static/js/runtime-main.60b43924.js",
     "runtime-main.js.map": "/ReactFolio/static/js/runtime-main.60b43924.js.map",
-    "static/js/2.8094275c.chunk.js": "/ReactFolio/static/js/2.8094275c.chunk.js",
-    "static/js/2.8094275c.chunk.js.map": "/ReactFolio/static/js/2.8094275c.chunk.js.map",
+    "static/js/2.8cf8c822.chunk.js": "/ReactFolio/static/js/2.8cf8c822.chunk.js",
+    "static/js/2.8cf8c822.chunk.js.map": "/ReactFolio/static/js/2.8cf8c822.chunk.js.map",
     "index.html": "/ReactFolio/index.html",
     "static/css/main.63f1720b.chunk.css.map": "/ReactFolio/static/css/main.63f1720b.chunk.css.map",
-    "static/js/2.8094275c.chunk.js.LICENSE.txt": "/ReactFolio/static/js/2.8094275c.chunk.js.LICENSE.txt",
+    "static/js/2.8cf8c822.chunk.js.LICENSE.txt": "/ReactFolio/static/js/2.8cf8c822.chunk.js.LICENSE.txt",
     "static/media/1DevConnApp.1b5a68c6.webp": "/ReactFolio/static/media/1DevConnApp.1b5a68c6.webp",
     "static/media/2ToDoApp.77626173.webp": "/ReactFolio/static/media/2ToDoApp.77626173.webp",
     "static/media/3Secrets.87e6e44e.webp": "/ReactFolio/static/media/3Secrets.87e6e44e.webp",
@@ -57,8 +57,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.60b43924.js",
-    "static/js/2.8094275c.chunk.js",
+    "static/js/2.8cf8c822.chunk.js",
     "static/css/main.63f1720b.chunk.css",
-    "static/js/main.88b6e60a.chunk.js"
+    "static/js/main.efc7851d.chunk.js"
   ]
 }
