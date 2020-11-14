@@ -1,7 +1,7 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import { Parallax } from "react-parallax";
-import LightSpeed from "react-reveal/LightSpeed";
+import Fade from "react-reveal/Fade";
 
 import "./App.css";
 import MyCarousel from "./components/my-carousel/my-carousel.component";
@@ -13,6 +13,7 @@ import BgImage from "./assets/img/parallex/background.webp";
 import useWindowDimensions from "./functionality/checkViewPort";
 import BgImageSmall from "./assets/img/parallex/background_reverse.webp";
 import Skills from "./pages/skills/skills.component";
+import Experience from "./pages/experience/experience.component";
 
 const App = () => {
   const { height, width } = useWindowDimensions();
@@ -34,9 +35,9 @@ const App = () => {
           >
             <div>
               <Container className="container-box rounded">
-                <LightSpeed left>
+                <Fade left>
                   <About />
-                </LightSpeed>
+                </Fade>
               </Container>
             </div>
           </Parallax>
@@ -50,20 +51,28 @@ const App = () => {
           >
             <div>
               <Container className="container-box rounded">
-                <LightSpeed left>
+                <Fade left>
                   <About />
-                </LightSpeed>
+                </Fade>
               </Container>
             </div>
           </Parallax>
         )}
       </div>
       <Container className="container-box rounded">
-        <LightSpeed right>
+        <Fade right>
           <hr />
           <Skills />
-        </LightSpeed>
+        </Fade>
       </Container>
+      <div>
+        <Container className="container-box rounded">
+          <Fade duration={500}>
+            <hr />
+            <Experience />
+          </Fade>
+        </Container>
+      </div>
     </div>
   );
 };
