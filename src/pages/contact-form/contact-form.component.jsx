@@ -50,7 +50,7 @@ const ContactForm = () => {
             </div>
             <div className="m-2">
               <a
-                href="https://github.com/ZarrarPalekar"
+                href="https://www.instagram.com/palekarzarrar/?hl=en"
                 target="_blank"
                 rel="noopener noreferrer"
               >
