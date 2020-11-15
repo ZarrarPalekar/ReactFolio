@@ -14,9 +14,13 @@ const MyNavbar = () => {
     () => setIsActive((prevState) => !prevState),
     []
   );
+
+  const [expanded, setExpanded] = useState(false);
+
   return (
     <div>
       <Navbar
+        expanded={expanded}
         id="navbar"
         fixed="top"
         expand="md"
@@ -26,18 +30,69 @@ const MyNavbar = () => {
         <Navbar.Brand id="logo" href="#home">
           <img className="logo" src={Logo} alt="PZJ-Logo" />
         </Navbar.Brand>
-        <Navbar.Toggle className="navToggler">
+        <Navbar.Toggle
+          onClick={() => setExpanded(expanded ? false : "expanded")}
+          className="navToggler"
+        >
           {/* <Hamburger color="white" size="100" /> */}
           <HamburgerVortex barColor="white" {...{ isActive, toggleButton }} />
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ml-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#about">About</Nav.Link>
-            <Nav.Link href="#skills">Skills</Nav.Link>
-            <Nav.Link href="#experience">Experience</Nav.Link>
-            <Nav.Link href="#projects">Projects</Nav.Link>
-            <Nav.Link href="#contact">Contact</Nav.Link>
+            <Nav.Link
+              onClick={() => {
+                setExpanded(false);
+                toggleButton();
+              }}
+              href="#home"
+            >
+              Home
+            </Nav.Link>
+            <Nav.Link
+              onClick={() => {
+                setExpanded(false);
+                toggleButton();
+              }}
+              href="#about"
+            >
+              About
+            </Nav.Link>
+            <Nav.Link
+              onClick={() => {
+                setExpanded(false);
+                toggleButton();
+              }}
+              href="#skills"
+            >
+              Skills
+            </Nav.Link>
+            <Nav.Link
+              onClick={() => {
+                setExpanded(false);
+                toggleButton();
+              }}
+              href="#experience"
+            >
+              Experience
+            </Nav.Link>
+            <Nav.Link
+              onClick={() => {
+                setExpanded(false);
+                toggleButton();
+              }}
+              href="#projects"
+            >
+              Projects
+            </Nav.Link>
+            <Nav.Link
+              onClick={() => {
+                setExpanded(false);
+                toggleButton();
+              }}
+              href="#contact"
+            >
+              Contact
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
