@@ -10,7 +10,7 @@ const About = () => {
   return (
     <div id="about">
       <div className="about">
-        <h1 className="pt-3 text-center font-details pb-3">ABOUT ZARRAR</h1>
+        <h1 className="pt-3 text-center font-details pb-3">ABOUT ME</h1>
         <Container>
           <Row className="pt-3 pb-5 align-items-center">
             <Col xs={12} md={6}>
@@ -26,9 +26,10 @@ const About = () => {
               </Row>
             </Col>
             <Col xs={12} md={6}>
-              <Row className="align-items-start p-2 my-details rounded">
+              <Row className="custom-bold8 align-items-start p-2 my-details rounded">
                 <p>
-                  Hi there! I am <strong>Zarrar Palekar</strong>
+                  Hi there! I am{" "}
+                  <strong className="boldest">ZARRAR PALEKAR</strong>
                 </p>
                 <p>
                   A passionate developer, born and brought up in Mumbai, IN. I
@@ -36,8 +37,8 @@ const About = () => {
                   Express.js, Node.js, and MongoDB as my tech stack.
                 </p>
                 <p>
-                  I am Post Graduate Diploma Holder from <strong>CDAC</strong>{" "}
-                  Institute
+                  I am Post Graduate Diploma Holder from{" "}
+                  <strong className="boldest">CDAC</strong> Institute
                 </p>
                 <p>
                   Working with the stakeholders, I always strive to understand
@@ -48,10 +49,10 @@ const About = () => {
                 </p>
                 <p>
                   Along with that, I also help my junior colleagues as a{" "}
-                  <strong>MENTOR</strong> in their day to day development
-                  tasks/issues. I love learning about new technologies, what
-                  problems are they solving and How can I use them to build
-                  better and scalable products.
+                  <strong className="boldest">MENTOR</strong> in their day to
+                  day development tasks/issues. I love learning about new
+                  technologies, what problems are they solving and How can I use
+                  them to build better and scalable products.
                 </p>
                 <br /> <br />
                 <Col className="d-flex justify-content-center flex-wrap">
