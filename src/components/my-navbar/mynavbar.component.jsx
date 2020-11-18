@@ -5,9 +5,13 @@ import Logo from "../../assets/icons/logow.webp";
 import "./mynavbar.style.css";
 // import Hamburger from "hamburger-react";
 
+import useWindowDimensions from "../../functionality/checkViewPort";
+
 import { HamburgerVortex } from "react-animated-burgers";
 
 const MyNavbar = () => {
+  const { width } = useWindowDimensions();
+
   const [isActive, setIsActive] = useState(false);
 
   const toggleButton = useCallback(
@@ -42,7 +46,7 @@ const MyNavbar = () => {
             <Nav.Link
               onClick={() => {
                 setExpanded(false);
-                toggleButton();
+                width < 600 && toggleButton();
               }}
               href="#home"
             >
@@ -51,7 +55,7 @@ const MyNavbar = () => {
             <Nav.Link
               onClick={() => {
                 setExpanded(false);
-                toggleButton();
+                width < 600 && toggleButton();
               }}
               href="#about"
             >
