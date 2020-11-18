@@ -64,7 +64,7 @@ const MyNavbar = () => {
             <Nav.Link
               onClick={() => {
                 setExpanded(false);
-                toggleButton();
+                width < 600 && toggleButton();
               }}
               href="#skills"
             >
@@ -73,7 +73,7 @@ const MyNavbar = () => {
             <Nav.Link
               onClick={() => {
                 setExpanded(false);
-                toggleButton();
+                width < 600 && toggleButton();
               }}
               href="#experience"
             >
@@ -82,7 +82,7 @@ const MyNavbar = () => {
             <Nav.Link
               onClick={() => {
                 setExpanded(false);
-                toggleButton();
+                width < 600 && toggleButton();
               }}
               href="#projects"
             >
@@ -91,7 +91,7 @@ const MyNavbar = () => {
             <Nav.Link
               onClick={() => {
                 setExpanded(false);
-                toggleButton();
+                width < 600 && toggleButton();
               }}
               href="#contact"
             >
